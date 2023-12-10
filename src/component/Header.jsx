@@ -6,18 +6,6 @@ import { IoMenu } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import Contact from "../Pages/Contact";
 
-// let menuOpen = true;
-// function menuFun() {
-//   const links = document.querySelector(".nav-links");
-//   if (menuOpen) {
-//     links.style.display = "none";
-//     menuOpen = !menuOpen;
-//   } else {
-//     links.style.display = "block";
-//     menuOpen = !menuOpen;
-//   }
-// }
-
 function windowResize() {
   window.addEventListener("resize", (e) => {
     if (e.srcElement.outerWidth >= 700) {
