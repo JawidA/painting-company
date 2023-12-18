@@ -1,5 +1,4 @@
 .services-section {
-  /* background-color: lightblue; */
   padding: 10px 20px;
   width: 1300px;
   max-width: 100%;
@@ -10,7 +9,6 @@
 }
 
 .services-centered {
-  /* background-color: aliceblue; */
   text-align: center;
 }
 
@@ -30,6 +28,7 @@
 .services-section .services-centered div img {
   width: 100px;
   height: 100px;
+  margin-bottom: 10px;
 }
 
 .services-card-contaner {
@@ -37,10 +36,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
-  /* background-color: antiquewhite; */
 }
 
 .services-card-contaner div {
+  height: 100%;
   box-shadow: 0 0 10px rgb(117, 116, 116);
   border-radius: 20px;
   padding: 30px 50px;

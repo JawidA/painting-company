@@ -1,6 +1,7 @@
 import React from "react";
 import "./services_style.css";
-import "./assets/internalPainting.png"
+import "./assets/internalPainting.png";
+import { Link } from "react-router-dom";
 
 export default function Services() {
   return (
@@ -15,49 +16,70 @@ export default function Services() {
           </p>
 
           <div className="services-card-contaner">
-            <div className="internal-painting">
-              <img
-                src="https://cdn3.iconfinder.com/data/icons/construction-376/64/paint-paintbrush-interior-color-tool-decoration-256.png"
-                alt="Internal Painting image"
-                className="service-icon icon"
-              />
-              <h2>Internal Painting</h2>
+            <Link to={"internal"}>
+              <div className="internal-painting">
+                <img
+                  src="https://cdn3.iconfinder.com/data/icons/construction-376/64/paint-paintbrush-interior-color-tool-decoration-256.png"
+                  alt="Internal Painting image"
+                  className="service-icon icon"
+                />
+                <h2>Internal Painting</h2>
 
-              <p>
-                Lorem ipsum dolor sit amet consectetur. Eget aliquet phasellus
-                ut mi netus risus. In luctus facilisi hendrerit aliquam ornare
-                aliquet rhoncus augue euismod.
-              </p>
-            </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Eget aliquet phasellus
+                  ut mi netus risus. In luctus facilisi hendrerit aliquam ornare
+                  aliquet rhoncus augue euismod.
+                </p>
+              </div>
+            </Link>
 
-            <div className="external-painting">
-              <img src="https://cdn.iconscout.com/icon/premium/png-512-thumb/house-painting-1952039-1658258.png?f=webp&w=256" alt="" className="service-icon icon" />
-              <h2>External Painting</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur. Est vulputate sed lectus
-                sed donec leo ac id. Eget mauris interdum rutrum cursus.
-              </p>
-            </div>
+            <Link to={"external"}>
+              <div className="external-painting">
+                <img
+                  src="https://cdn.iconscout.com/icon/premium/png-512-thumb/house-painting-1952039-1658258.png?f=webp&w=256"
+                  alt=""
+                  className="service-icon icon"
+                />
+                <h2>External Painting</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Est vulputate sed
+                  lectus sed donec leo ac id. Eget mauris interdum rutrum
+                  cursus.
+                </p>
+              </div>
+            </Link>
 
-            <div className="residential-painting">
-              <img src="https://cdn.iconscout.com/icon/premium/png-512-thumb/painting-98893.png?f=webp&w=256" alt="" className="service-icon icon" />
-              <h2>Residential Painting</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur. Est id congue commodo
-                malesuada vitae sapien. Aliquet arcu porttitor etiam sit massa
-                habitant duis..
-              </p>
-            </div>
+            <Link to={"residential"}>
+              <div className="residential-painting">
+                <img
+                  src="https://cdn.iconscout.com/icon/premium/png-512-thumb/painting-98893.png?f=webp&w=256"
+                  alt=""
+                  className="service-icon icon"
+                />
+                <h2>Residential Painting</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Est id congue commodo
+                  malesuada vitae sapien. Aliquet arcu porttitor etiam sit massa
+                  habitant duis..
+                </p>
+              </div>
+            </Link>
 
-            <div className="commercial-painting">
-              <img src="https://cdn.iconscout.com/icon/free/png-512/free-building-1182-460359.png?f=webp&w=256" alt="" className="service-icon icon" />
-              <h2>Commercial Painting</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur. Habitant purus purus
-                tincidunt nisl cras in semper feugiat tellus. Fames facilisis
-                platea vitae tincidunt.
-              </p>
-            </div>
+            <Link to={"commercial"}>
+              <div className="commercial-painting">
+                <img
+                  src="https://cdn.iconscout.com/icon/free/png-512/free-building-1182-460359.png?f=webp&w=256"
+                  alt=""
+                  className="service-icon icon"
+                />
+                <h2>Commercial Painting</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Habitant purus purus
+                  tincidunt nisl cras in semper feugiat tellus. Fames facilisis
+                  platea vitae tincidunt.
+                </p>
+              </div>
+            </Link>
           </div>
         </div>
       </div>
