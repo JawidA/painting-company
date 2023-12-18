@@ -1,10 +1,7 @@
 import React from "react";
 import logo from "../assets/Logo.png";
 import "./Header_style.css";
-import menu from "../assets/bar.svg";
-import { IoMenu } from "react-icons/io5";
 import { Link } from "react-router-dom";
-import Contact from "../Pages/Contact";
 
 function windowResize() {
   window.addEventListener("resize", (e) => {
@@ -33,7 +30,7 @@ function mClose() {
 }
 
 function navClick(e) {
-  if (e.target.localName == "li") mClose();
+  if (e.target.localName == "li" && window.innerWidth < 700) mClose();
 }
 
 export default function Header() {

@@ -1,0 +1,74 @@
+.services-section {
+  /* background-color: lightblue; */
+  padding: 10px 20px;
+  width: 1300px;
+  max-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.services-centered {
+  /* background-color: aliceblue; */
+  text-align: center;
+}
+
+.services-section .services-centered .section-par {
+  font-size: 1.1rem;
+}
+
+.services-section .services-centered .section-title {
+  font-size: 3rem;
+}
+
+.services-section .services-centered .section-name {
+  font-size: 1.3rem;
+  color: #00dc09;
+}
+
+.services-section .services-centered div img {
+  width: 100px;
+  height: 100px;
+}
+
+.services-card-contaner {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  /* background-color: antiquewhite; */
+}
+
+.services-card-contaner div {
+  box-shadow: 0 0 10px rgb(117, 116, 116);
+  border-radius: 20px;
+  padding: 30px 50px;
+}
+
+@media screen and (max-width: 850px) {
+  .services-card-contaner div {
+    padding: 20px 10px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .services-card-contaner {
+    grid-template-columns: 1fr;
+  }
+  .services-card-contaner div {
+    padding: 30px 40px;
+  }
+
+  .services-section .services-centered .section-title {
+    font-size: 2.2rem;
+  }
+
+  .services-section .services-centered .section-name {
+    font-size: 1.2rem;
+  }
+
+  .services-section .services-centered .section-par {
+    font-size: 1rem;
+  }
+}
